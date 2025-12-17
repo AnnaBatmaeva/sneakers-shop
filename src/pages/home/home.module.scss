@@ -1,0 +1,64 @@
+.heroBlock {
+    margin-top: -1px;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heroContentBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+
+
+}
+
+.heroContentBlock__left {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+}
+
+.heroContentBlock__right {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(141, 141, 141);
+
+}
+
+.newColectionBlock {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #fafafa;
+}
+
+.titles {
+    display: flex;
+    padding-bottom: 20px;
+    &__newColection {
+        text-transform: uppercase;
+        font-size: 26px;
+    }
+
+    &__goToNewColection {
+        margin-left: auto;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 18px;
+    }
+}

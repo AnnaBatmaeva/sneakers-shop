@@ -1,0 +1,145 @@
+[
+    {
+        "id": 1,
+        "title": "Yeezy 500 'Stone Salt'",
+        "price": 59,
+        "brand": "Adidas",
+        "image": "/products/yeezy-500-stone-salt.jpg",
+        "category": "men",
+        "isNew": true, 
+        "discount": 0
+    },
+    {
+        "id": 2,
+        "title": "Samba OG 'White Black Gum'",
+        "price": 49,
+        "brand": "Adidas",
+        "image": "/products/samba-og-white-black-gum.jpg",
+        "category": "men",
+        "isNew": false,
+        "discount": 0
+    },
+    {
+        "id": 3,
+        "title": "Wmns Dunk Low 'Khaki Team Red'",
+        "price": 88,
+        "brand": "Nike",
+        "image": "/products/wmns-dunk-low-khaki-teamred.jpg",
+        "category": "women",
+        "isNew": true,
+        "discount": 0
+    },
+    {
+        "id": 4,
+        "title": "Wmns P-6000 'Gold'",
+        "price": 51,
+        "brand": "Nike",
+        "image": "/products/wmns-p-6000-gold.jpg",
+        "category": "women",
+        "isNew": false,
+        "discount": 0
+    },
+    {
+        "id": 5,
+        "title": "Air Diamond Turf 'Cowboy'",
+        "price": 111,
+        "brand": "Nike",
+        "image": "/products/air-diamond-turf-cowboy.jpg",
+        "category": "men",
+        "isNew": true,
+        "discount": 0
+    },
+    {
+        "id": 6,
+        "title": "Jordan 4 Retro 'Black Cat' 2025",
+        "price": 234,
+        "brand": "Air Jordan", 
+        "image": "/products/jordan-4-retro-black-cat-2025.jpg",
+        "category": "men",
+        "isNew": false,
+        "discount": 0
+    },
+    {
+        "id": 7,
+        "title": "Wmns Jordan 4 Retro 'Orchid'",
+        "price": 268,
+        "brand": "Air Jordan",
+        "image": "/products/wmns-jordan-4-retro-rchid.jpg",
+        "category": "men",
+        "isNew": true,
+        "discount": 0
+    },
+    {
+        "id": 9,
+        "title": "Yeezy Boost 350 V2 'Onyx'",
+        "price": 77,
+        "brand": "Adidas",
+        "image": "/products/yeezy-boost-350-v2-onyx.jpg",
+        "category": "men",
+        "isNew": true,
+        "discount": 0
+    },
+    {
+        "id": 10,
+        "title": "Wmns Air Max 95 OG 'Blue Tint' 2025",
+        "price": 119,
+        "brand": "Nike",
+        "image": "/products/wmns-air-max-95-og-blue-tint-2025.jpg",
+        "category": "women",
+        "isNew": true,
+        "discount": 0
+    },
+    {
+        "id": 11,
+        "title": "Jordan 11 Retro 'Rare Air'",
+        "price": 145,
+        "brand": "Nike",
+        "image": "/products/jordan-11-retro-rare-air.jpg",
+        "category": "men",
+        "isNew": true,
+        "discount": 0
+    },
+    {
+        "id": 12,
+        "title": "SHAI 001 'Charm Black'",
+        "price": 144,
+        "brand": "Converse",
+        "image": "/products/shai-001-charm-black.jpg",
+        "category": "men",
+        "isNew": true,
+        "discount": 0
+    },
+    {
+        "id": 13,
+        "title": "Stranger Things x Weapon 'Laser Blue'",
+        "price": 170,
+        "brand": "Converse",
+        "image": "/products/stranger-things-x-weapon-laser-blue.jpg",
+        "category": "men",
+        "isNew": true,
+        "discount": 0
+    },
+    {
+
+        "id": 14,
+        "title": "Wmns VLTG Mid 'Space Cowgirl'",
+        "price": 58,
+        "brand": "Converse",
+        "image": "/products/wmns-vltg-mid-space-cowgirl.jpg",
+        "category": "women",
+        "isNew": true,
+        "discount": 0
+    }
+
+]
+
+
+
+
+
+
+
+
+
+
+
