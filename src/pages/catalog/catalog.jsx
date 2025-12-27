@@ -1,9 +1,15 @@
+import Products from '../../components/Products/Products'
+import styles from "./catalog.module.scss"
 
 function Catalog() {
 
   return (
     <>
-        <h1>Каталог</h1>
+      <div className={styles.catalogBlock}>
+        <div className='content'>
+          <Products />
+        </div>
+      </div>
     </>
   )
 }

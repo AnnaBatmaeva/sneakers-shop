@@ -2,43 +2,16 @@
     margin-top: -1px;
     width: 100%;
     background-color: rgb(41, 41, 41);
-
-
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
-.heroContentBlock {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-
-
-}
-
-.heroContentBlock__left {
-    width: 70%;
-    height: 100%;
-    background-color: rgb(41, 41, 41);
-}
-
-.heroContentBlock__right {
-    width: 30%;
-    height: 100%;
-    background-color: rgb(141, 141, 141);
-
-}
 
 .newColectionBlock {
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -50,6 +23,7 @@
 .titles {
     display: flex;
     padding-bottom: 20px;
+
     &__newColection {
         text-transform: uppercase;
         font-size: 26px;
@@ -60,5 +34,67 @@
         text-decoration: underline;
         cursor: pointer;
         font-size: 18px;
+    }
+}
+
+.joinClubBlock {
+    background-image: url("../../assets/join-club.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    color: black;
+
+
+}
+
+.joinClubContentBlock {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__titles {
+        margin-left: auto;
+        margin-right: 30px;
+        gap: 10px;
+        font-size: 53px;
+
+
+        h2 {
+            font-weight: 800;
+        }
+
+        h3 {
+            font-weight: 600;
+            margin-top: -35px;
+        }
+
+    }
+
+    &__socialMedia {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: auto;
+        margin-right: 30px;
+        margin-left: auto;
+        color: #fafafa;
+
+        h2 {
+            font-weight: 400;
+            font-size: 40px;
+            margin-right: 15px;
+        }
+
+        .icons {
+            margin-left: 10px;
+            width: 45px;
+            height: 45px;
+            cursor: pointer;
+        }
     }
 }

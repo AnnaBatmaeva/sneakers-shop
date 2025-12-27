@@ -12,10 +12,6 @@ function Hero() {
                 <Slide1 />
                 <Slide1 />
             </Slider>
-
-
-
-
         </section>
     )
 }
