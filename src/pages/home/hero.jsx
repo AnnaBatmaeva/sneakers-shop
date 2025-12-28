@@ -3,7 +3,6 @@ import Slider from '../../components/Slider/slider.jsx'
 
 import Slide1 from './slides/slide1.jsx'
 
-
 function Hero() {
 
     return (

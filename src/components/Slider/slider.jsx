@@ -29,7 +29,6 @@ const Slider = ({
     setIsAutoPlaying(true);
   }, [totalSlides]);
 
-  // Автопрокрутка
   useEffect(() => {
     if (!isAutoPlaying || totalSlides <= 1) return;
 
@@ -40,7 +39,6 @@ const Slider = ({
     return () => clearInterval(interval);
   }, [isAutoPlaying, autoPlayInterval, goToNext, totalSlides]);
 
-  // Пауза при нведенні
   const handleMouseEnter = () => {
     setIsAutoPlaying(false);
   };

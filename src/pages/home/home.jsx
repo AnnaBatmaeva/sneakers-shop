@@ -13,6 +13,7 @@ import facebookIcon from '../../assets/icons/socialMedia/Facebook.png';
 
 
 function Home() {
+      console.log("Рендер карточок:");
 
   return (
     <>
@@ -26,7 +27,7 @@ function Home() {
           <Products filter="new" limit={10} />
         </div>
       </div>
-      
+
       <div className={styles.joinClubBlock}>
         <div className="content">
           <div className={styles.joinClubContentBlock}>
