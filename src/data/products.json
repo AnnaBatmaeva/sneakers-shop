@@ -230,6 +230,28 @@
             "category": "women",
             "isNew": false,
             "discount": 0
+        },
+        {
+            "id": 23,
+            "title": "Yeezy Desert Boot 'Oil' 2024",
+            "price": 100,
+            "brand": "Adidas",
+            "image": "/products/yeezy-desert-boot-oil-2024.jpg",
+            "description": "The 2024 iteration of the adidas Yeezy Desert Boot 'Oil' shoes bring an earth-toned upper, featuring open-cell mesh with matching nubuck and suede overlays. A padded high-cut collar helps keep you comfortable the minute you lace them up, while a rubber mudguard protects high-abrasion areas. These kicks have a lightweight foam midsole, anchored by a durable rubber outsole.",
+            "category": "men",
+            "isNew": false,
+            "discount": 0
+        },
+        {
+            "id": 24,
+            "title": "BAPE x Samba 'Black White Gum'",
+            "price": 100,
+            "brand": "Adidas",
+            "image": "/products/bape-x-samba-black-white-gum.jpg",
+            "description": "The BAPE x adidas Samba 'Black White Gum' brings a black leather upper updated with a rubberized T-toe overlay. A white BAPESTA logo decorates the right side of each shoe, while the opposite side is stamped with classic white leather three-stripes. Both brand logos land on the tongue tag and insoles. A gum rubber sole unit completes the look.",
+            "category": "men",
+            "isNew": false,
+            "discount": 0
         }
     ]
 }

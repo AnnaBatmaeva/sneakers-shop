@@ -23,7 +23,7 @@ function ProductPage() {
         if (!productState.product.id || +productState.product.id !== +id) {
             dispatch(fetchProduct(id));
         }
-    }, []);
+    }, [id, dispatch]);
 
     useEffect(() => {
         document.title = id ? `Product #${id}` : 'Product';
