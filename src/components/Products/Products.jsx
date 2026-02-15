@@ -15,14 +15,14 @@ import ProductCard from "../ProductCard/ProductCard";
 import styles from "./products.module.scss"
 
 
-function Products({ filter, limit, brand, category }) {
+function Products({ filter, limit, brand, category, excludeId }) {
   const productsState = useSelector(state => state.products);
   const dispatch = useDispatch();
 
   let filteredProducts = productsState.products || [];
 
   const recommendedProducts = useSelector(state =>
-    selectRecommendedProducts(state, limit, brand, category));
+    selectRecommendedProducts(state, limit, brand, category, excludeId));
   const newProducts = useSelector(state => selectNewCollection(state, limit));
 
   useEffect(() => {
@@ -39,8 +39,6 @@ function Products({ filter, limit, brand, category }) {
     filteredProducts = recommendedProducts
   }
 
-  if (productsState.error !== null) return (<ErrorMessage errorText={productsState.error} />);
-  if (productsState.state === 'loading') return <Loader />;
   
   return (
     <div className={styles.productsGrid}>

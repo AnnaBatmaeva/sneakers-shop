@@ -11,7 +11,6 @@ const links = [
     { to: "", label: "Home" },
     { to: "catalog", label: "Catalog" },
     { to: "sales", label: "Sales" },
-    { to: "contacts", label: "Contact" },
 ];
 
 function Header() {
@@ -33,7 +32,7 @@ function Header() {
                             {link.label}
                         </NavLink>
                     ))}
-                    <img src={profileIcon} className={styles.navigation__iconProfile} alt="Profile Icon" />
+                    <NavLink to="/account"><img src={profileIcon} className={styles.navigation__iconProfile} alt="Profile Icon" /></NavLink>
                 </nav>
             </header>
             <Outlet />

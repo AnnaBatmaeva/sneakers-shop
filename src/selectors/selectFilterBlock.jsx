@@ -14,8 +14,9 @@ export const selectRecommendedProducts = createSelector(
     (_, limit) => limit,
     (_, __, brand) => brand,
     (_, __, ___, category) => category,
+    (_, __, ___, ____, excludeId) => excludeId,
   ],
-  (products, limit, brand, category) => {
+  (products, limit, brand, category, excludeId) => {
     let filtered = products;
 
     if (category) {
@@ -24,6 +25,10 @@ export const selectRecommendedProducts = createSelector(
 
     if (brand) {
       filtered = filtered.filter(p => p.brand === brand);
+    }
+
+    if (excludeId) {
+      filtered = filtered.filter(p => Number(p.id) !== Number(excludeId));
     }
 
 

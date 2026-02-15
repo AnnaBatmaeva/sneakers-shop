@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "./productCard.module.scss";

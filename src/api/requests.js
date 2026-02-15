@@ -1,12 +1,20 @@
 import axios from 'axios';
 
-export async function getProducts() {
-    const response = await axios.get('http://localhost:5000/products');
+export async function getProducts(filters = {}) {
+    const params = {};
+    if (filters.brands?.length) {
+        params.brands = filters.brands.join(',');
+    }
+
+    if (filters.genders?.length) {
+        params.genders = filters.genders.join(',');
+    }
+    const response = await axios.get('http://localhost:5100/products', { params });
     return response.data;
 }
 
 export async function getProduct(productID) {
-    const response = await axios.get(`http://localhost:5000/products/${productID}`);
+    const response = await axios.get(`http://localhost:5100/products/${productID}`);
     console.log(response.data)
     return response.data;
 }

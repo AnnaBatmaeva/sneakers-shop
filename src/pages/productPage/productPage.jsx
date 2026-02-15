@@ -60,7 +60,7 @@ function ProductPage() {
             <div className={styles.recommendedBlock}>
                 <div className="content">
                     <h1 className={styles.recommendedBlock__title}>Recommended For You</h1>
-                    <Products filter="recommended" limit={10} brand={productState.product.brand} category={productState.product.category} />
+                    <Products filter="recommended" limit={10} brand={productState.product.brand} category={productState.product.category} excludeId={Number(id)} />
                 </div>
             </div>
         </>

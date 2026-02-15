@@ -1,13 +1,16 @@
+
+import { Suspense } from "react";
+import Header from './layout/header/header'
+import Loader from './components/States/Loader'
+
 import './App.css'
 
-import Header from './layout/header/header'
-
 function App() {
-
   return (
-    <>
-    <Header/>
-    </>
+    <Suspense fallback={Loader}>
+      <Header />
+    </Suspense>
+    
   )
 }
 

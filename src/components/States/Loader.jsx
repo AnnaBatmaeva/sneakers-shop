@@ -1,8 +1,13 @@
-import './states.css'
+import './states.scss'
 
 const Loader = () => {
   return (
-    <h1>Loading...</h1>
+    <>
+      <div class="container-loader">
+      </div>
+      <div class="mui-circular-progress">
+      </div>
+    </>
   );
 };
 

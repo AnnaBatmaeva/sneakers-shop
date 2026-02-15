@@ -1,4 +1,4 @@
-import './states.css'
+import './states.scss'
 
 const ErrorMessage = ({ errorText }) => {
   return (

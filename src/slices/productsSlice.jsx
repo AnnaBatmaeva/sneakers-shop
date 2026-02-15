@@ -7,10 +7,23 @@ const initialState = {
     error: null,
 };
 
-export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-    const response = await getProducts();
-    return response;
-});
+export const fetchProducts = createAsyncThunk(
+  'products/fetchProducts',
+  async (filters) => {
+    const params = new URLSearchParams();
+
+    if (filters.brands.length) {
+      params.append('brands', filters.brands.join(','));
+    }
+
+    if (filters.genders.length) {
+      params.append('genders', filters.genders.join(','));
+    }
+
+    const res = await fetch(`http://localhost:5100/products?${params.toString()}`);
+    return await res.json();
+  }
+);
 
 
 const productsSlice = createSlice({

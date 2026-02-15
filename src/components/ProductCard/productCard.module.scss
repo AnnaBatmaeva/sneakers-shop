@@ -21,6 +21,24 @@
         flex: 1;
         padding-bottom: 20px;
 
+        .block {
+            display: flex;
+            flex-direction: row;
+            margin-top: auto;
+
+            .button {
+                margin-left: auto;
+                cursor: pointer;
+                border: none;
+                background-color: black;
+                color: white;
+                border-radius: 12px;
+                padding: 0 10px;
+                font-weight: 700;
+                font-size: 12px;
+            }
+        }
+
     }
 
     .title {
@@ -38,23 +56,5 @@
         width: 100%;
         height: auto;
 
-    }
-
-    .block {
-        display: flex;
-        flex-direction: row;
-        margin-top: auto;
-
-        .button {
-            margin-left: auto;
-            cursor: pointer;
-            border: none;
-            background-color: black;
-            color: white;
-            border-radius: 12px;
-            padding: 0 10px;
-            font-weight: 700;
-            font-size: 12px;
-        }
     }
 }
