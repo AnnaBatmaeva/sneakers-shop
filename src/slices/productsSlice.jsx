@@ -12,12 +12,12 @@ export const fetchProducts = createAsyncThunk(
   async (filters) => {
     const params = new URLSearchParams();
 
-    if (filters.brands.length) {
-      params.append('brands', filters.brands.join(','));
+    if (filters.brand.length) {
+      params.append('brand', filters.brand.join(','));
     }
 
-    if (filters.genders.length) {
-      params.append('genders', filters.genders.join(','));
+    if (filters.gender.length) {
+      params.append('gender', filters.gender.join(','));
     }
 
     const res = await fetch(`http://localhost:5100/products?${params.toString()}`);

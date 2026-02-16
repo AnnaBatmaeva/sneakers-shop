@@ -14,14 +14,14 @@ const products = JSON.parse(
 app.get('/products', (req, res) => {
     let filtered = products;
 
-    if (req.query.brands) {
-        const brandsArray = req.query.brands.split(',');
-        filtered = filtered.filter(p => brandsArray.includes(p.brand));
+    if (req.query.brand) {
+        const brandArray = req.query.brand.split(',');
+        filtered = filtered.filter(p => brandArray.includes(p.brand));
     }
 
-    if (req.query.genders) {
-        const gendersArray = req.query.genders.split(',');
-        filtered = filtered.filter(p => gendersArray.includes(p.gender));
+    if (req.query.gender) {
+        const genderArray = req.query.gender.split(',');
+        filtered = filtered.filter(p => genderArray.includes(p.gender));
     }
 
     res.json(filtered);

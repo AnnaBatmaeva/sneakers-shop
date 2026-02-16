@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    brands: [],
-    genders: [],
+    brand: [],
+    gender: [],
 };
 
 const filtersSlice = createSlice({
@@ -10,10 +10,10 @@ const filtersSlice = createSlice({
     initialState,
     reducers: {
         setBrand(state, action) {
-            state.brands = action.payload;
+            state.brand = action.payload;
         },
         setGender(state, action) {
-            state.genders = action.payload;
+            state.gender = action.payload;
         },
         resetFilters() {
             return initialState;

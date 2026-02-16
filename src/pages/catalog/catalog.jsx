@@ -57,33 +57,33 @@ function Catalog() {
                 <AccordionDetails>
                   <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <FormControlLabel control={<Checkbox
-                      checked={filters.genders.includes('Women')}
+                      checked={filters.gender.includes('Women')}
                       onChange={(e) => {
-                        const newGenders = e.target.checked
-                          ? [...filters.genders, 'Women']
-                          : filters.genders.filter(g => g !== 'Women');
+                        const newGender = e.target.checked
+                          ? [...filters.gender, 'Women']
+                          : filters.gender.filter(g => g !== 'Women');
 
-                        dispatch(setGender(newGenders));
+                        dispatch(setGender(newGender));
                       }}
                     />} label="Women" />
                     <FormControlLabel control={<Checkbox
-                      checked={filters.genders.includes('Men')}
+                      checked={filters.gender.includes('Men')}
                       onChange={(e) => {
-                        const newGenders = e.target.checked
-                          ? [...filters.genders, 'Men']
-                          : filters.genders.filter(g => g !== 'Men');
+                        const newGender = e.target.checked
+                          ? [...filters.gender, 'Men']
+                          : filters.gender.filter(g => g !== 'Men');
 
-                        dispatch(setGender(newGenders));
+                        dispatch(setGender(newGender));
                       }}
                     />} label="Men" />
                     <FormControlLabel control={<Checkbox
-                      checked={filters.genders.includes('Kids')}
+                      checked={filters.gender.includes('Kids')}
                       onChange={(e) => {
-                        const newGenders = e.target.checked
-                          ? [...filters.genders, 'Kids']
-                          : filters.genders.filter(g => g !== 'Kids');
+                        const newGender = e.target.checked
+                          ? [...filters.gender, 'Kids']
+                          : filters.gender.filter(g => g !== 'Kids');
 
-                        dispatch(setGender(newGenders));
+                        dispatch(setGender(newGender));
                       }}
                     />} label="Kids" />
                   </div>
@@ -105,43 +105,43 @@ function Catalog() {
                 <AccordionDetails>
                   <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <FormControlLabel control={<Checkbox
-                      checked={filters.brands.includes('Nike')}
+                      checked={filters.brand.includes('Nike')}
                       onChange={(e) => {
-                        const newBrands = e.target.checked
-                          ? [...filters.brands, 'Nike']
-                          : filters.brands.filter(b => b !== 'Nike');
+                        const newBrand = e.target.checked
+                          ? [...filters.brand, 'Nike']
+                          : filters.brand.filter(b => b !== 'Nike');
 
-                        dispatch(setBrand(newBrands));
+                        dispatch(setBrand(newBrand));
                       }}
                     />} label="Nike" />
                     <FormControlLabel control={<Checkbox
-                      checked={filters.brands.includes('Addidas')}
+                      checked={filters.brand.includes('Adidas')}
                       onChange={(e) => {
-                        const newBrands = e.target.checked
-                          ? [...filters.brands, 'Addidas']
-                          : filters.brands.filter(b => b !== 'Addidas');
+                        const newBrand = e.target.checked
+                          ? [...filters.brand, 'Adidas']
+                          : filters.brand.filter(b => b !== 'Adidas');
 
-                        dispatch(setBrand(newBrands));
+                        dispatch(setBrand(newBrand));
                       }}
-                    />} label="Addidas" />
+                    />} label="Adidas" />
                     <FormControlLabel control={<Checkbox
-                      checked={filters.brands.includes('Air Jordan')}
+                      checked={filters.brand.includes('Air Jordan')}
                       onChange={(e) => {
-                        const newBrands = e.target.checked
-                          ? [...filters.brands, 'Air Jordan']
-                          : filters.brands.filter(b => b !== 'Air Jordan');
+                        const newBrand = e.target.checked
+                          ? [...filters.brand, 'Air Jordan']
+                          : filters.brand.filter(b => b !== 'Air Jordan');
 
-                        dispatch(setBrand(newBrands));
+                        dispatch(setBrand(newBrand));
                       }}
                     />} label="Air Jordan" />
                     <FormControlLabel control={<Checkbox
-                      checked={filters.brands.includes('Converse')}
+                      checked={filters.brand.includes('Converse')}
                       onChange={(e) => {
-                        const newBrands = e.target.checked
-                          ? [...filters.brands, 'Converse']
-                          : filters.brands.filter(b => b !== 'Converse');
+                        const newBrand = e.target.checked
+                          ? [...filters.brand, 'Converse']
+                          : filters.brand.filter(b => b !== 'Converse');
 
-                        dispatch(setBrand(newBrands));
+                        dispatch(setBrand(newBrand));
                       }}
                     />} label="Converse" />
                   </div>

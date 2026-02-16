@@ -2,12 +2,12 @@ import axios from 'axios';
 
 export async function getProducts(filters = {}) {
     const params = {};
-    if (filters.brands?.length) {
-        params.brands = filters.brands.join(',');
+    if (filters.brand?.length) {
+        params.brand = filters.brand.join(',');
     }
 
-    if (filters.genders?.length) {
-        params.genders = filters.genders.join(',');
+    if (filters.gender?.length) {
+        params.gender = filters.gender.join(',');
     }
     const response = await axios.get('http://localhost:5100/products', { params });
     return response.data;
